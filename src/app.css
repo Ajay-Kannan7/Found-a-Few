@@ -1,0 +1,487 @@
+@import url("animate.css");
+
+*{
+    margin:0;
+    border:0;
+    box-sizing:border-box;
+    font-family:built;
+}
+
+body{
+    background-image:linear-gradient(to right, yellow, rgb(135, 135, 7));
+}
+
+@font-face{
+    font-family:built;
+    src:url("./fonts/builttitlingsb.otf");
+}
+
+.clearfix::after{
+    content:'';
+    display:block;
+    clear:both;
+}
+
+.main-cover .NavBar-Logo{
+    width:100%;
+    justify-content:space-between;
+    align-items:center;
+    background-color:yellow;
+    margin:3% auto;
+    position:relative;
+    padding:1%;
+    border-top:3px solid black;
+    border-bottom:3px solid black;
+}
+
+.main-cover .logo-cover{
+    width:10%;
+}
+
+.main-cover .logo-cover img{
+    width:100%;
+    border-radius:20px;
+}
+
+.main-cover .hamburger-icon{
+    float:right;
+    position:absolute;
+    top:0;
+    display:none;
+}
+
+.main-cover .links-parent{
+    width:50%;
+    float:right;
+    position:absolute;
+    top:30%;
+    left:45%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.main-cover .links-parent .links-children{
+    text-decoration:none;
+    color:black;
+    font-size:30px;
+    position:relative;
+}
+
+.main-cover .links-parent .links-children::after{
+    content:"";
+    background-color:black;
+    position:absolute;
+    top:110%;
+    left:0%;
+    transition:all 0.2s ease-in;
+    border-radius:20px;
+}
+
+.main-cover .links-parent .links-children:hover::after{
+    width:100%;
+    padding:3%;
+}
+
+.main-cover .links-parent .Nav-button{
+    font-size:25px;
+    border:3px solid black;
+    border-radius:20px;
+    background-color:rgb(211, 211, 2);
+    padding:2%;
+    cursor:pointer;
+    transition:all 0.2s ease-in;
+}
+
+.main-cover .links-parent .Nav-button:hover{
+    background-color:black;
+    color:rgb(211, 211, 2);
+}
+
+.main-banner{
+    width:97%;
+    margin:3% auto;
+    background-color:yellow;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    border:7px solid black;
+    padding:5%;
+}
+
+.main-banner h1{
+    font-size:130px;
+    font-weight:bolder;
+}
+
+.main-banner h1 .full-stop{
+    color:rgb(197, 197, 30);
+}
+
+.main-banner p{
+    font-size:35px;
+}
+
+.main-banner .hire-apply-banner{
+    width:70%;
+    padding:3%;
+    display:flex;
+    justify-content:space-between;
+}
+.main-banner .hire-apply-banner .hire-apply{
+    width:45%;
+    font-size:30px;
+    background-image:linear-gradient(to right, yellow, rgb(218, 218, 6));
+    padding:2%;
+    border:2px solid black;
+    cursor:pointer;
+    transition:all 0.1s ease-in;
+}
+
+.main-banner .hire-apply-banner .hire-apply h3{
+    margin-bottom:15%;
+}
+
+.main-banner .hire-apply-banner .hire-apply:hover{
+    border-left:11px solid black;
+    border-bottom:11px solid black;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.main-banner .hire-apply-banner .hire-apply .hire-icons{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    font-size:30px;
+}
+
+.main-banner-two{
+    width:97%;
+    background-color:black;
+    color:white;
+    margin:3% auto;
+    padding:5%;
+    border:7px solid rgb(134, 134, 5);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display:flex;
+    justify-content:space-between;
+    position:relative;
+}
+
+.main-banner-two .recruitment-banner{
+    width:50%;
+    padding:2%;
+}
+
+.main-banner-two .recruitment-banner h1{
+    font-size:100px;
+}
+
+.main-banner-two .recruitment-banner p{
+    font-size:20px;
+    margin:3% 0;
+}
+
+.main-banner-two .recruitment-image{
+    width:50%;    
+    position:absolute;
+    left:50%;
+    top:15%;
+}
+
+.main-banner-two .recruitment-banner button{
+    font-size:25px;
+    border:3px solid black;
+    border-radius:20px;
+    background-color:yellow;
+    padding:4%;
+    cursor:pointer;
+    transition:all 0.2s ease-in;
+}
+
+.main-banner-two .recruitment-banner button:hover .arrow{
+    transition: all 0.2s ease-in;
+}
+
+.main-banner-two .recruitment-banner button:hover .arrow{
+    transform:translateX(10px);
+}
+
+.main-banner-two .recruitment-banner button:hover{
+    background-color:black;
+    color:rgb(211, 211, 2);
+    border:3px solid yellow;
+}
+
+.main-banner-two .recruitment-image img{
+    width:100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.main-banner-three{
+    width:100%;
+    background-color:white;
+    color:rgb(134, 134, 5);
+    border-top: 7px solid rgb(134, 134, 5);;
+    border-bottom: 7px solid rgb(134, 134, 5);;
+    margin:3% 0;
+    padding:5%;
+    display:flex;
+    justify-content:space-between;
+}
+
+.main-banner-three .professional-content{
+    width:45%;
+    padding:3%;
+}
+
+.main-banner-three .professional-content h1{
+    font-size:90px;
+    margin-bottom:5%;
+}
+
+.main-banner-three .professional-content p{
+    font-size:30px;
+}
+
+.main-banner-three .professional-board{
+    width:45%;
+    padding:2%;
+    position:relative;
+    border:3px solid black;
+    cursor:pointer;
+    transition:all 0.2s ease-in;
+}
+
+.main-banner-three .professional-board:hover{
+    border-left:15px solid black;
+    border-bottom:15px solid black;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.main-banner-three .professional-board h3{
+    font-size:70px;
+}
+
+.main-banner-three .professional-board p{
+    font-size:40px;
+    margin-top:10%;
+}
+
+.main-banner-three .professional-board .calendar{
+    font-size:80px;
+    position:absolute;
+    top:70%;
+    left:80%;
+}
+
+.testimonials-banner{
+    width:90%;
+    background-color:yellow;
+    margin:3% auto;
+    padding:3%;
+    border:7px solid black;
+    border-radius:20px;
+}
+
+.testimonials-banner h1{
+    font-size:70px;
+}
+
+.testimonials-banner .testimonial-carousel{
+    width:100%;
+    background-color:white;
+    margin:5% auto;
+    padding:3%;
+    border:3px solid black;
+    border-radius: 20px;
+    cursor:grab;
+}
+
+.testimonials-banner .testimonial-carousel .slider-cover .slider-element p{
+    font-size:30px;
+    margin-bottom:10%;
+}
+
+.testimonials-banner .testimonial-carousel .slider-cover .slider-element h3{
+    font-size:30px;
+}
+
+.footer-banner{
+    width:100%;
+    background-color:black;
+    color:white;
+    padding:5%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.footer-banner .footer-image{
+    width:25%;
+}
+
+.footer-banner .footer-image img{
+    width:100%;
+}
+
+.footer-links-cover{
+    width:50%;
+    display:flex;
+    justify-content:space-between;
+}
+
+.footer-links-cover .footer-links{
+    width:50%;
+    margin:5% 0;
+}
+
+.footer-links-cover .footer-links p{
+    color:yellow;
+}
+
+.footer-links-cover .footer-links a,
+.footer-links-cover .footer-links p{
+    font-size:30px;
+    margin:5% 0;
+}
+
+.footer-links-cover .footer-links a{
+    display:block;
+    text-decoration:none;
+    color:white;
+}
+
+.footer-links-cover .footer-links a:hover{
+    text-decoration: underline;
+}
+
+.copyright{
+    width:100%;
+    border-top:1px solid white;
+    background-color: black;
+    color:white;
+    padding:3%;
+    text-align:center;
+}
+
+@media only screen and (max-width:840px){
+    .main-cover .NavBar-Logo{
+        padding:5%;
+    }
+    .main-cover .logo-cover{
+        width:20%;
+    }
+    .main-cover .hamburger-icon{
+        display:block;
+        left:90%;
+        top:30%;
+        font-size:25px;
+        cursor:pointer;
+    }
+    .main-cover .links-parent{
+        width:90%;
+        background-image:linear-gradient(to right, yellow, rgb(215, 215, 7));
+        display:none;
+        border-bottom:3px solid black;
+        border-top-left-radius: 20px;
+        border-top:3px solid black;
+        border-bottom-right-radius: 20px;
+        margin-top:2%;
+        flex-direction:column;
+        float:none !important;
+        top:100%;
+        left:5%;
+    }
+    
+    .main-cover .links-children, .main-cover .Nav-button{
+        margin:2% 0;
+    }
+
+    .main-cover .links-parent.visible{
+        display:flex;
+        animation: fadeIn 0.7s ease-in;
+    }
+
+    .main-cover .links-parent.visible .links-children,
+    .main-cover .links-parent.visible .Nav-button{
+        font-size:20px;
+    }
+
+    .main-banner{
+        width:100%;
+    }
+
+    .main-banner h1{
+        font-size:80px;
+    }
+
+    .main-banner .hire-apply-banner{
+        width:100%;
+    }
+
+    .main-banner-two{
+        width:100%;
+        flex-direction:column-reverse;
+        
+    }
+    .main-banner-two .recruitment-image{
+        width:100%;
+        position:relative;
+        left:0;
+    }
+
+    .main-banner-two .recruitment-banner{
+        width:100%;
+    }
+
+    .main-banner-two .recruitment-banner h1{
+        font-size:80px;
+    }
+
+    .main-banner-three{
+        flex-direction:column;
+    }
+
+    .main-banner-three .professional-content,
+    .main-banner-three .professional-board{
+        width:100%;
+    }
+
+    .main-banner-three .professional-board{
+        margin-top:10%;
+    }
+
+    .main-banner-three .professional-board .calendar{
+        position:relative;
+        margin-top:15%;
+    }
+
+    .testimonials-banner{
+        width:100%;
+    }
+
+    .testimonials-banner .testimonial-carousel{
+        padding-bottom:13%;
+    }
+
+    .testimonials-banner .testimonial-carousel .slider-cover .slider-element p{
+        font-size:20px;
+    }
+
+    .footer-banner{
+        flex-direction:column;
+    }
+
+    .footer-links-cover{
+        width:80%;
+    }
+
+    .footer-links-cover .footer-links a,
+    .footer-links-cover .footer-links p{
+        font-size:20px;
+        margin:9% 0;
+    }
+}
