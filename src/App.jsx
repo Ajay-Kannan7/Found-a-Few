@@ -102,7 +102,7 @@ function App() {
           <h1>Recruiting Across All Career Levels.</h1>
           <p>For permanent, Fixed Term Contract <br></br> and Interim Appointments</p>
         </div>
-        <div className="professional-board" data-aos="fade-right">
+        <div className="professional-board" data-aos="fade-up">
           <h3>Cavernous range !</h3>
           <p>Entry level, graduate, <br></br>experienced professional</p>
           <FontAwesomeIcon icon={faCalendarDays} className="calendar"></FontAwesomeIcon>
